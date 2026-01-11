@@ -25,6 +25,7 @@ pipeline {
                 echo("Branch Name : ${env.BRANCH_NAME}")
                 echo("APP User : ${APP_USR}")
                 echo("APP Password : ${APP_PSW}")
+                sh('echo "App Password : $APP_PSW" > "rahasia.txt"')
             }
         }
 
