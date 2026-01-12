@@ -4,6 +4,13 @@ import uni.jenkins.Output;
 pipeline {
     agent any 
     stages {
+        stage("Global Variable") {
+            steps {
+                script {
+                    echo(author.name())
+                }
+            }
+        }
         stage("Hello Groovy") {
             steps {
                 script {
