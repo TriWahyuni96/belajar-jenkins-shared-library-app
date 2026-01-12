@@ -4,7 +4,7 @@ import uni.jenkins.Output;
 pipeline {
     agent any 
     stages {
-        stage("Hello World") {
+        stage("Hello Groovy") {
             steps {
                 script {
                     Output.hello("Groovy")
