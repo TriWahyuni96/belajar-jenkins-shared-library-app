@@ -4,6 +4,16 @@ import uni.jenkins.Output;
 pipeline {
     agent any 
     stages {
+        stage("Hello person") {
+            steps {
+                script {
+                    hello.person ([
+                        firstName: "Tri Wahyuni",
+                        lastName: "Uni"
+                    ])
+                }
+            }
+        }
         stage("Maven Build") {
             steps {
                 script {
