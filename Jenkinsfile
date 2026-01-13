@@ -1,5 +1,5 @@
 @Library("belajar-jenkins-shared-library@master") _ 
 
-pznPipeline9([
+pznPipeline([
     type : "maven"
 ])
