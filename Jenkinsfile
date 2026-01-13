@@ -4,6 +4,14 @@ import uni.jenkins.Output;
 pipeline {
     agent any 
     stages {
+        stage("Library Resource") {
+            steps {
+                script {
+                    def config = libraryResource("config/build.json")
+                    echo(config)
+                }
+            }
+        }
         stage("Hello person") {
             steps {
                 script {
